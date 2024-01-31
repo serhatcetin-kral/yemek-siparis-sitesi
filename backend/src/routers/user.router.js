@@ -1,9 +1,10 @@
 import { Router } from "express";
-import { sample_users } from "../data";
-import { Jwt } from "jsonwebtoken";
+import { sample_users } from "../data.js";
+import jwt  from "jsonwebtoken";
+const router=Router();
 import { BAD_REQUEST } from "../constants/httpStatus.js";
 
-const router=Router();
+
 
 router.post('/login',(req,res)=>{
 const {email,password}=req.body;
