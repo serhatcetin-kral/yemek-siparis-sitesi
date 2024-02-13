@@ -23,6 +23,7 @@ export const AuthProvider = ({ children }) => {
       setUser(user);
       toast.success('Register Successful');
     } catch (err) {
+      // toast.error("register faild");
       toast.error(err.response.data);
     }
   };
