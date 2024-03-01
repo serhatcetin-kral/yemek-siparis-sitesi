@@ -61,7 +61,8 @@ export default function FoodEditPage() {
         <Title title={isEditMode ? 'Edit Food' : 'Add Food'} />
         <form onSubmit={handleSubmit(submit)} noValidate>
           <InputContainer label="Select Image">
-            <input type="file" onChange={upload} accept="image/jpeg" />
+            <input type="file" onChange={upload} accept="image/jpeg" /> 
+            {/* yukaria jpeg format erine star  koyarsan butun formatlarai alabilir bi dene sonra */}
           </InputContainer>
 
           {imageUrl && (
