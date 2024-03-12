@@ -17,6 +17,7 @@ import FoodsAdminPage from './pages/FoodsAdmin/FoodsAdminPage';
 import FoodEditPage from './pages/FoodEdit/FoodEditPage';
 import UsersPage from './pages/UsersPage/UsersPage';
 import UserEditPage from './pages/UserEdit/UserEditPage';
+import AboutUs from './pages/AboutUs/AboutUs';
 
 export default function AppRoutes() {
   return (
@@ -28,6 +29,8 @@ export default function AppRoutes() {
       <Route path="/cart" element={<CartPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
+      <Route path="/aboutus" element={<AboutUs />} />
+
       <Route
         path="/checkout"
         element={

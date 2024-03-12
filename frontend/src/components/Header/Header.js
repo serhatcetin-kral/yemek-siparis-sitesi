@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useCart } from '../../hooks/useCart';
 import classes from './header.module.css';
 import { useAuth } from '../../hooks/useAuth';
+import logo from './logo.png';
 
 export default function Header() {
   const { user, logout } = useAuth();
@@ -15,8 +16,19 @@ export default function Header() {
         <Link to="/" className={classes.logo}>
           Quick Delish
         </Link>
+                
+
+        <img src={logo} alt="Logo" height={60} />
         <nav>
           <ul>
+           
+
+          <li>
+              <Link to="/aboutus">
+               About Us
+              </Link>
+            </li>
+
             {user ? (
               <li className={classes.menu_container}>
                 <Link to="/dashboard">{user.name}</Link>
