@@ -41,6 +41,7 @@ export default function UsersPage() {
         <div className={classes.list_item}>
           <h3>Name</h3>
           <h3>Email</h3>
+          <h3>Phone</h3>
           <h3>Address</h3>
           <h3>Admin</h3>
           <h3>Actions</h3>
@@ -50,6 +51,7 @@ export default function UsersPage() {
             <div key={user.id} className={classes.list_item}>
               <span>{user.name}</span>
               <span>{user.email}</span>
+              <span>{user.phone}</span>
               <span>{user.address}</span>
               <span>{user.isAdmin ? '✅' : '❌'}</span>
               <span className={classes.actions}>

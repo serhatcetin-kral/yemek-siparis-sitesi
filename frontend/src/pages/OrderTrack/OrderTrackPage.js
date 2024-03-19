@@ -41,6 +41,10 @@ export default function OrderTrackPage() {
               {order.address}
             </div>
             <div>
+              <strong>Email</strong>
+              {order.email}
+            </div>
+            <div>
               <strong>State</strong>
               {order.status}
             </div>

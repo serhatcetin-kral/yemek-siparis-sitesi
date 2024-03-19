@@ -57,6 +57,16 @@ export default function RegisterPage() {
             })}
             error={errors.email}
           />
+           
+           <Input
+            type="text"
+            label="phone"
+            {...register('phone', {
+              required: true,
+              minLength: 10,
+            })}
+            error={errors.phone}
+          />
 
           <Input
             type="password"

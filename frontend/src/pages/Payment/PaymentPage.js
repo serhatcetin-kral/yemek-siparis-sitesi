@@ -29,6 +29,14 @@ export default function PaymentPage() {
               <h3>Address:</h3>
               <span>{order.address}</span>
             </div>
+            <div>
+              <h3>Email:</h3>
+              <span>{order.email}</span>
+            </div>
+            <div>
+              <h3>Phone:</h3>
+              <span>{order.phone}</span>
+            </div>
           </div>
           <OrderItemsList order={order} />
         </div>

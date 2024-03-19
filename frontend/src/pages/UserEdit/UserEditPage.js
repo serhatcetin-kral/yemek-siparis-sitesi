@@ -47,6 +47,12 @@ export default function UserEditPage() {
             {...register('email', { required: true, pattern: EMAIL })}
             error={errors.email}
           />
+               <Input
+            label="Phone"
+            {...register('phone', { required: true,minLength:10 })}
+            error={errors.phone}
+          />
+
           <Input
             label="Address"
             {...register('address', { required: true, minLength: 5 })}

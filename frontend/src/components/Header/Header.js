@@ -18,7 +18,7 @@ export default function Header() {
         </Link>
                 
 
-        <img src={logo} alt="Logo" height={60} />
+        <img src={logo} alt="Logo" height={70} />
         <nav>
           <ul>
            

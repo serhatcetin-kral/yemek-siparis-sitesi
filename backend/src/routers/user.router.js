@@ -27,7 +27,7 @@ router.post('/login',handler(async (req,res)=>{
     router.post(
         '/register',
         handler(async (req,res)=>{
-            const {name,email,password,address}=req.body;
+            const {name,email,phone,password,address}=req.body;
             const user=await UserModel.findOne({email});
             if(user){
                 res.status(BAD_REQUEST).send("User already exist,please login");
@@ -42,6 +42,7 @@ router.post('/login',handler(async (req,res)=>{
   const newUser={
 name,
 email:email.toLowerCase(),
+phone,
 password:hashedPassword,
 address,
   };
