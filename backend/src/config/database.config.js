@@ -15,7 +15,7 @@ const PASSWORD_HASH_SALT_ROUNDS=10;
   
 export const dbconnect=async()=>{
     try{
-        connect("mongodb://localhost:27017/web-db",{
+        connect(process.env.MONGO_URI,{
             useNewUrlParser:true,
             useUnifiedTopology:true, 
             
