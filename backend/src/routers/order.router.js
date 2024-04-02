@@ -6,10 +6,6 @@ import { OrderModel } from '../models/order.model.js';
 import { OrderStatus } from '../constants/orderStatus.js';
 import { UserModel } from '../models/user.model.js';
 
-
-
-
-
 const router=Router();
 router.use(auth);
 

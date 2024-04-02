@@ -62,8 +62,8 @@ export default function RegisterPage() {
             type="text"
             label="phone"
             {...register('phone', {
-              required: true,
-              minLength: 10,
+              required: false,
+              minLength: 0,
             })}
             error={errors.phone}
           />

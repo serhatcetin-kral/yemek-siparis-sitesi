@@ -30,7 +30,7 @@ export default function CheckoutPage() {
       return;
     }
 
-    await createOrder({ ...order, name: data.name, address: data.address });
+    await createOrder({ ...order, name: data.name, address: data.address,phone:data.phone });
     navigate('/payment');
   };
 
@@ -51,6 +51,13 @@ export default function CheckoutPage() {
               label="Address"
               {...register('address')}
               error={errors.address}
+            />
+            
+            <Input
+              defaultValue={user.phone}
+              label="Phone"
+              {...register('phone')}
+              error={errors.phone}
             />
           </div>
           <OrderItemsList order={order} />
