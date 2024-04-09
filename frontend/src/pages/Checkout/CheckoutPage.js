@@ -52,13 +52,13 @@ export default function CheckoutPage() {
               {...register('address')}
               error={errors.address}
             />
-            
             <Input
               defaultValue={user.phone}
               label="Phone"
               {...register('phone')}
               error={errors.phone}
             />
+            
           </div>
           <OrderItemsList order={order} />
         </div>
